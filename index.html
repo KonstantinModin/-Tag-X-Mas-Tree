@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New Year Count Down</title>
+    <style>
+    
+    body {
+        transition: .5s;
+    }
+
+    .tree {
+        text-align: center;
+        width: 800px;
+        /* border: 1px solid black; */
+        font-family: 'Courier New', Courier, monospace;
+        /* margin-left: auto;
+        margin-right: auto; */
+        margin: auto;
+        /* padding: 20px; */
+        font-weight: bold;
+        font-size: 290%;
+    }
+    .a {
+        color: red;
+    }
+    .b {
+        color: blue;
+    }
+    .c {
+        color: greenyellow;
+    }
+    .d {
+        color: rgb(248, 248, 76);
+    }
+    .e {
+        color: rgb(255, 2, 247);
+    }
+
+
+    .night
+    {
+        position: relative;
+        top: 90%;
+        margin-left: 10px;
+        margin-top: 5%;
+        
+        width: 180px;
+        /* left: 5%; */
+        /* border: 1px solid black; */
+        /* transform: translate(-50%, -50%); */
+        text-align: center;
+        
+    }
+    .label {
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bolder;
+        color: rgb(201, 34, 34);
+        font-size: 110%;
+        padding-bottom: 4px; 
+
+    }
+   
+
+    input[type="checkbox"] {
+        position: relative;
+        width: 80px;
+        height: 40px;
+        -webkit-appearance: none;
+        background: #d7ffff;
+        outline: none;
+        border-radius: 20px;
+        box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+        transition: .5s;
+    }
+    input:checked[type="checkbox"]
+    {
+        background: #0dffff;
+    }
+    input[type="checkbox"]:before
+    {
+        content: url(snowflake40.png);
+        font-family: wingdings;
+        text-align: center;
+        font-size: 280%;
+        color: brown;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        top: 0;
+        left: 0;
+        background: #a7fcfc;
+        transform: scale(1.1);
+        box-shadow: 0 2px 5px rgba(0,0,0,.2);
+        transition: .5s;
+
+    }
+    input:checked[type="checkbox"]:before
+    {
+        left: 40px;
+        transform: rotate(-180deg) scale(1.1);
+        background: #0bd3d3;
+        
+    }
+
+    .top {
+        /* border: 1px solid black; */
+        height: 130px;
+
+    }
+
+    /*CSS Mobile */
+    @media only screen 
+    and (min-device-width : 320px) 
+    and (max-device-width : 568px){
+        .tree {
+            width: 370px;
+            font-size: 130%;
+            
+        }
+        .night {
+            transform: scale(0.5);
+            margin-left: 0;
+        }
+        .top {
+        /* border: 1px solid black; */
+        height: 70px;
+        }
+    }
+    
+    </style>
+    
+</head>
+<body>
+    
+    <div class="tree">
+        <div class="top">
+        <span class="e" id="title"><p> </p></span></div>
+        <span class="a">&lt;*&gt;</span> <br>
+        <span class="b">&lt;nav&gt;</span> <br>
+        <span class="c">&lt;/head&gt;</span> <br>
+        <span class="d">&lt;/img&gt;</span><span class="e">&lt;s&gt;</span> <br>
+        <span class="a">&lt;meta&gt;</span><span class="b">&lt;var&gt;</span> <br>
+        <span class="c">&lt;p&gt;</span><span class="d">&lt;title&gt;</span><span class="e">&lt;b&gt;</span> <br>
+        <span class="a">&lt;div&gt;</span><span class="b">&lt;noscript&gt;</span> <br>
+        <span class="c">&lt;input&gt;</span><span class="d">&lt;textarea&gt;</span> <br>
+        <span class="e">&lt;/ul&gt;</span><span class="a">&lt;/title&gt;</span><span class="b">&lt;span&gt;</span> <br>
+        <span class="c">&lt;dir&gt;</span><span class="d">&lt;blink&gt;</span><span class="e">&lt;caption&gt;</span> <br>
+        <span class="a">&lt;html&gt;</span>
+    </div>
+    <div class="night">
+            <div class="label">Toggle night mode</div>
+            <input class="checkbox" type="checkbox" name=""> 
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
+
+<!-- 
+&lt; и &gt;  -->
