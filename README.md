@@ -1,7 +1,6 @@
-# <Tag> X-Mas Tree
+﻿# <Tag> X-Mas Tree
 
 <Tag> X-Mas Tree with ilumination and New Year countdown
-
 
 ## Authors
 
@@ -9,6 +8,8 @@
 * https://github.com/KonstantinModin
 * konstantin.v.modin@gmail.com
 
+## Web-site:
+https://eager-chandrasekhar-fa6375.netlify.com/
 
 ## Version History
 
